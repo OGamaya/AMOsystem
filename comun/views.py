@@ -34,7 +34,9 @@ def login_view(request):
 @csrf_exempt
 def logout_view(request):
     logout(request)
-    return JsonResponse({'mensaje': 'Ok'})
+
+    print("test12")
+    return JsonResponse({'mensaje': 'Oki'})
 
 @csrf_exempt
 def logged_view(request):
